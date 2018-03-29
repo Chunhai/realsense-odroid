@@ -125,6 +125,7 @@ odroid ubuntu + realsense sdk + opencv + qt creator
     >INSTALLS        = target</br>
     >target.files    = test      <-------------------- project name</br>
     >target.path     = /home/odroid/projects_exe <--------Path that stores the exe file in a different location, should be different from the path where exe file is generated</br>
+    
     In order to compile and run realsense library, add the static lib.</br>
     > LIBS += -L/usr/local/lib -lrealsense2</br>
 
