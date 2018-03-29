@@ -148,11 +148,13 @@ odroid XU4 ubuntu + realsense sdk + opencv + qt creator
   - Configure qt
     For linker purpose, add the "opencv" library path</br>
     > LIBS += -L/usr/local/lib -lopencv_core -lopencv_imgcodecs -lopencv_highgui</br>
+    
     or</br>
     > LIBS += `pkg-config opencv --libs`</br>
+    
     or</br>
-    > UNIX {
-    >  CONFIG += link_pkgconfig
-    >  PKGCONFIG += opencv
-    >  }
+    > UNIX {</br>
+    >  CONFIG += link_pkgconfig</br>
+    >  PKGCONFIG += opencv</br>
+    >  }</br>
     
