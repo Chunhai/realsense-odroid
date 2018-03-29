@@ -112,7 +112,8 @@ odroid ubuntu + realsense sdk + opencv + qt creator
      >The username to log into this device: odroid</br>
      >The user's passwork: *****</br>
    - Add Compiler</br>
-     Set compiler path as `/arm-gcc`</br>
+     Set name. For example, GCC(odroid)
+     Set compiler path as `/usr/bin/arm-linux-gnueabihf-g++`</br>
    - Add Kit</br>
      Set "Device type" as "Generic Linux Device"</br>
      Set "Device" as the device you just added</br>
