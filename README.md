@@ -122,8 +122,10 @@ odroid ubuntu + realsense sdk + opencv + qt creator
     **"File" - "New File or Project" - "Non-qt Project" - "Console"**</br>
     This is a hello word test case, before compile and run, open **.pro** file and add the followings</br>
     >INSTALLS        = target</br>
-    >target.files    = widgettest</br>
-    >target.path     = /home/pi</br>
+    >target.files    = test      <-------------------- project name</br>
+    >target.path     = /home/odroid/projects_exe <--------Path that stores the exe file in a different location, should be different from the path where exe file is generated</br>
+    In order to compile and run realsense library, add the static lib.</br>
+    > LIBS += -L/usr/local/lib -lrealsense2</br>
 
    
 # Install opencv
@@ -142,10 +144,13 @@ odroid ubuntu + realsense sdk + opencv + qt creator
     (2) Create a file called /etc/ld.so.conf.d/opencv.conf and write to it the path to the folder where the binary is stored.For example, I wrote /usr/local/lib/ to my opencv.conf file</br>
     (3) `sudo ldconfig -v`
   - Configure qt
-    For linker purpose, add the "opencv" and "librealsense2" library path</br>
+    For linker purpose, add the "opencv" library path</br>
     > LIBS += -L/usr/local/lib -lopencv_core -lopencv_imgcodecs -lopencv_highgui</br>
     or</br>
     > LIBS += `pkg-config opencv --libs`</br>
     or</br>
-    > UNIX
+    > UNIX {
+    >  CONFIG += link_pkgconfig
+    >  PKGCONFIG += opencv
+    >  }
     
