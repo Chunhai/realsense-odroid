@@ -1,6 +1,6 @@
 # realsense-odroid
 
-odroid ubuntu + realsense sdk + opencv + qt creator
+odroid XU4 ubuntu + realsense sdk + opencv + qt creator
 
 # Flashing an Ubuntu Image on an OSX Computer
 
