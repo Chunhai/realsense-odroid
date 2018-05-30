@@ -10,4 +10,4 @@ Please refer to [setup.md](https://github.com/chunhai/realsense-odroid/blob/mast
 
 # Codes
 
-Please refer to [TODO]
+Please refer to [putter_detection][https://github.com/chunhai/realsense-odroid/tree/master/putter_detection]
